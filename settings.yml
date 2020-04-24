@@ -33,3 +33,8 @@ svg_icons:
   type: "list"
   list_type: "compact"
   description: "List of FontAwesome 5 icons used in the social links setting above. "
+custom_footer_color:
+  default: ""
+  type: "string"
+  description:
+    en: "By default, the $secondary color in your color scheme is used as the footer background color. If you'd like to override it, provider the Hex code for desired custom footer color here."
