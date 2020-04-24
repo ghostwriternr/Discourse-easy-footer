@@ -38,3 +38,8 @@ custom_footer_color:
   type: "string"
   description:
     en: "By default, the $secondary color in your color scheme is used as the footer background color. If you'd like to override it, provider the Hex code for desired custom footer color here."
+custom_footer_logo:
+  default: ""
+  type: "string"
+  description:
+    en: "Use an image logo instead of text title in the footer"

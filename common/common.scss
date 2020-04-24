@@ -28,11 +28,28 @@
   }
   .first-box {
     max-width: 20%;
-    .heading {
-      font-size: $font-up-2;
-      font-weight: bold;
-      margin-bottom: 0.5em;
-      display: block;
+    @if empty($custom_footer_logo) {
+      .heading {
+        font-size: $font-up-2;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+        display: block;
+      }
+    } @else {
+      .heading {
+        font-size: 0;
+      }
+      .heading::after {
+        content: '';
+        display: block;
+        height: 64px;
+        width: 64px;
+        position: absolute;
+        background: url($custom_footer_logo);
+        margin-bottom: 0.5em;
+        border-style: none;
+        border-width: 1px;
+      }
     }
     .blurb {
       color: $secondary-high;
