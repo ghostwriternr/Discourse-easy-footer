@@ -43,3 +43,8 @@ custom_footer_logo:
   type: "string"
   description:
     en: "Use an image logo instead of text title in the footer"
+footer_title_link:
+  default: "/"
+  type: "string"
+  description:
+    en: "Hyperlink to be added to the title text in the footer"
